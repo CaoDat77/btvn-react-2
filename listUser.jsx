@@ -1,5 +1,5 @@
 function ListUser({ users }) {
-  const list = users.map((user) => <User user={user} />);
+  const list = users.map((user, index) => <User user={user} key={index} />);
   return <div className="d-flex gap ">{list}</div>;
 }
 
